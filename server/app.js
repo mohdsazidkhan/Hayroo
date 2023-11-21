@@ -1,13 +1,13 @@
 /* 
 
 ================== Most Important ==================
-* Issue 1 :
+*1 :
 In uploads folder you need create 3 folder like bellow.
 Folder structure will be like: 
 public -> uploads -> 1. products 2. customize 3. categories
 *** Now This folder will automatically create when we run the server file
 
-* Issue 2:
+*2:
 For admin signup just go to the auth 
 controller then newUser obj, you will 
 find a role field. role:1 for admin signup & 
@@ -48,7 +48,7 @@ mongoose
   })
   .then(() =>
     console.log(
-      "==============Mongodb Database Connected Successfully=============="
+      "=MongoDB Connected Successfully="
     )
   )
   .catch((err) => console.log("Database Not Connected !!!"));
@@ -71,7 +71,7 @@ app.use("/api/order", orderRouter);
 app.use("/api/customize", customizeRouter);
 
 // Run Server
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
-  console.log("Server is running on ", PORT);
+  console.log("Backend Server is Running on", PORT);
 });

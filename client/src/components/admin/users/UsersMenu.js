@@ -1,9 +1,7 @@
-import React, { Fragment, useContext } from "react";
-import { UsersContext } from "./index";
+import React, { Fragment } from "react";
 import EditUsersModal from "./EditUsersModal";
 
-const UsersMenu = (props) => {
-  const { dispatch } = useContext(UsersContext);
+const UsersMenu = () => {
 
   return (
     <Fragment>

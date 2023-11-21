@@ -37,7 +37,7 @@ const LoginSignup = (props) => {
       <section
         className={` ${
           data.loginSignupModal ? "" : "hidden"
-        } fixed z-40 inset-0 my-8 md:my-20 flex items-start justify-center overflow-auto`}
+        } fixed z-40 inset-0 mt-2 flex items-start justify-center overflow-auto`}
       >
         <div className="w-11/12 md:w-3/5 lg:w-2/4 relative space-y-4 bg-white p-6 md:px-12 md:py-6">
           {login ? <Login /> : <Signup />}

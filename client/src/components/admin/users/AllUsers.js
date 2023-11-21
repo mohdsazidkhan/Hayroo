@@ -128,8 +128,8 @@ const UsersTable = ({ user, deleteUser, editUser }) => {
         <td className="p-2 text-center">
           <img
             className="w-12 h-12 object-cover object-center"
-            src={require('../../../assets/images/'+user.userImage)}
-            alt=""
+            src={'/images/'+user.userImage}
+            alt="User"
           />
         </td>
         <td className="p-2 text-left">
